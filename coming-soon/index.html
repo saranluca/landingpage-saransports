@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SaranSports – Website kommt bald</title>
+  <meta name="description" content="SaranSports – Individuelles Online-Coaching. Die neue Website ist bald online.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#060d09">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:opsz,wght@9..40,400..600&display=swap" rel="stylesheet">
+
+  <!-- Self-contained on purpose: this single file can be deployed on its own. -->
+  <style>
+    :root {
+      --color-bg: #060d09;
+      --color-surface: #0a2016;
+      --color-accent: #2de07a;
+      --color-accent-hover: #1ac963;
+      --color-text: #e8f0eb;
+      --color-text-soft: #a0b8aa;
+      --color-text-muted: #8aa898;
+      --font-sans: "DM Sans", system-ui, sans-serif;
+      --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body { margin: 0; height: 100%; }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(26, 122, 70, 0.28), transparent 60%),
+        var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(28px, 6vw, 40px);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    p.logo { color: var(--color-text); }
+
+    .logo span { color: var(--color-accent); }
+
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(36px, 9vw, 72px);
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    p {
+      max-width: 34rem;
+      margin: 0;
+      color: var(--color-text-soft);
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 6px;
+      background: var(--color-accent);
+      color: var(--color-bg);
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover { background: var(--color-accent-hover); }
+
+    .btn:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 3px;
+    }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--color-text-muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="logo">Saran<span>Sports</span></p>
+    <h1>Website kommt bald</h1>
+    <p>Hier entsteht gerade die neue Seite für individuelles Online-Coaching. Du willst schon jetzt loslegen? Schreib mir einfach.</p>
+    <a class="btn" href="mailto:contact@saransports.com">contact@saransports.com</a>
+  </main>
+  <footer>&copy; 2026 SaranSports</footer>
+</body>
+</html>
